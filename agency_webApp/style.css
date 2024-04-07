@@ -278,3 +278,109 @@ button.hero-btn {
   font-size: 14px;
   color: #6f6f6f;
 }
+/* feature item */
+.feature {
+  margin: 0;
+  padding: 130px 0px;
+}
+.feature-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feature-row {
+  display: flex;
+}
+.feature-img {
+  position: relative !important;
+  background-size: cover !important;
+  overflow: hidden !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  width: 25%;
+  height: 465px;
+}
+.first-img {
+  background-image: url(img/homepage-option17-image-01.jpg);
+}
+.sec-img {
+  background-image: url(img/homepage-option17-image-02.jpg);
+}
+
+.feature-content {
+  width: 25%;
+  background: #000;
+  padding: 50px;
+}
+
+.feature-content h5 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.feature-content h4 {
+  font-size: 22px;
+  line-height: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.feature-content p {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.feature-btn {
+  padding: 4px 24px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  display: inline-block;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.feature-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+.feature-btn i {
+  transition: 0.3s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  -moz-transition: 0.3s ease-in;
+  -ms-transition: 0.3s ease-in;
+  -o-transition: 0.3s ease-in;
+}
+.feature-btn i:hover {
+  color: #000;
+}
+/* portfolio */
+.portfolio {
+  padding: 0px 2% 130pc 2%;
+}
+ul.portfolio-ist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+ul.portfolio-ist a {
+  margin: 0px 25px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6a6a6a;
+}
+.portfolio-ist a.active {
+  color: #000;
+  border-bottom: 1px solid #000;
+}
