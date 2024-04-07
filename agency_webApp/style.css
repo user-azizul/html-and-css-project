@@ -366,21 +366,83 @@ button.hero-btn {
 .portfolio {
   padding: 0px 2% 130pc 2%;
 }
-ul.portfolio-ist {
+ul.portfolio-btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 80px;
 }
 
-ul.portfolio-ist a {
+ul.portfolio-btn a {
   margin: 0px 25px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
   color: #6a6a6a;
 }
-.portfolio-ist a.active {
+.portfolio-btn a.active {
   color: #000;
   border-bottom: 1px solid #000;
+}
+ul.portfolio-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+li.box {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  width: 23%;
+  transition: all 0.3s ease 0s;
+  margin: 0 7px 5px 7px;
+}
+a.portfolio-item {
+  color: #000;
+  text-align: center;
+  position: relative;
+  transition: top 1s ease;
+  -webkit-transition: top 1s ease;
+  -moz-transition: top 1s ease;
+  -ms-transition: top 1s ease;
+  -o-transition: top 1s ease;
+}
+
+.portfolio-img {
+  transition: transform 0.3s;
+}
+.portfolio-img img {
+  opacity: 1;
+  width: 100%;
+}
+
+.portfolio-text h5 {
+  font-size: 14px;
+  color: #232323;
+  font-weight: 600;
+}
+
+.portfolio-text p {
+  font-size: 10px;
+  font-weight: 600;
+  color: #6a6a6a;
+  letter-spacing: 0.5px;
+}
+
+.portfolio-text {
+  padding: 35px;
+  position: absolute;
+  height: auto;
+  right: 25%;
+  bottom: -100px;
+  transition-property: bottom;
+  transition-duration: 0.3s;
+}
+
+li.box:hover .portfolio-img {
+  transform: translateY(-100px);
+}
+li.box:hover .portfolio-text {
+  bottom: 0;
 }
