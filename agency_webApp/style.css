@@ -364,7 +364,7 @@ button.hero-btn {
 }
 /* portfolio */
 .portfolio {
-  padding: 0px 2% 130pc 2%;
+  padding: 0px 2% 130px 2%;
 }
 ul.portfolio-btn {
   display: flex;
@@ -445,4 +445,62 @@ li.box:hover .portfolio-img {
 }
 li.box:hover .portfolio-text {
   bottom: 0;
+}
+/* information */
+.information {
+  padding: 0 8% 130px 8%;
+}
+.information-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.information-img {
+  width: 58%;
+}
+.information-img img {
+  width: 100%;
+}
+.information-text {
+  width: 41%;
+}
+.information-text h4 {
+  font-size: 32px;
+  line-height: 40px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.information-text li {
+  position: relative;
+  padding: 0 0 10px 22px;
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.information-text li::before {
+  content: "\f00c";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 16px;
+}
+button.info-btn {
+  background: black;
+  padding: 8px 24px;
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  border: 2px solid #000;
+  border-radius: 4px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+}
+button.info-btn:hover {
+  background-color: #fff;
+  color: #000;
 }
