@@ -19,6 +19,9 @@ body {
   font-weight: 400;
   line-height: 24px;
 }
+img {
+  width: 100%;
+}
 h2,
 h3,
 h4 {
@@ -26,7 +29,7 @@ h4 {
 }
 section {
   width: 100%;
-  padding: 130px 8%;
+  padding: 0px 8% 130px 8%;
 }
 header {
   background: linear-gradient(
@@ -124,7 +127,9 @@ a.logo {
 }
 
 /* hero section */
-
+.hero {
+  padding: 130px 8%;
+}
 .content {
   text-align: center;
   color: #fff;
@@ -214,6 +219,10 @@ button.hero-btn {
   margin: 0;
 }
 /* service */
+
+section.service {
+  padding: 130px 8%;
+}
 .service-container {
   display: flex;
   flex-direction: column;
@@ -373,14 +382,15 @@ ul.portfolio-btn {
   margin-bottom: 80px;
 }
 
-ul.portfolio-btn a {
+ul.portfolio-btn li {
   margin: 0px 25px;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 500;
   color: #6a6a6a;
+  cursor: pointer;
 }
-.portfolio-btn a.active {
+.portfolio-btn li.active {
   color: #000;
   border-bottom: 1px solid #000;
 }
@@ -446,6 +456,12 @@ li.box:hover .portfolio-img {
 li.box:hover .portfolio-text {
   bottom: 0;
 }
+.box .remove {
+  display: none;
+}
+.box .active {
+  display: flex;
+}
 /* information */
 .information {
   padding: 0 8% 130px 8%;
@@ -503,4 +519,110 @@ button.info-btn {
 button.info-btn:hover {
   background-color: #fff;
   color: #000;
+}
+/* paralax feature  */
+.paralax {
+  padding: 0 0% 130px 0;
+}
+.paralx-container {
+  display: flex;
+  justify-content: space-between;
+}
+/* .pararlax-img {
+  background-image: url(img/services-classic-07.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 660px;
+  height: 708px;
+} */
+.pararlax-img {
+  width: 674px;
+  height: 670px;
+}
+.pararlax-img img {
+  width: 100%;
+  height: 100%;
+}
+.pararlax-text {
+  padding: 4%;
+  width: 60%;
+  background-color: #f7f7f7;
+}
+.pararlax-text h4 {
+  font-size: 40px;
+  line-height: 46px;
+  width: 59%;
+  color: #232323;
+  margin-bottom: 6%;
+}
+
+.paralax-item {
+  display: flex;
+  width: 50%;
+  padding: 15px 15px;
+  justify-content: space-between;
+}
+.paralax-text-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paralax-icon {
+  margin-right: 40px;
+}
+
+.paralax-icon i {
+  font-size: 35px;
+}
+
+.paralax-innerText h5 {
+  color: #232323;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.paralax-innerText p {
+  margin-bottom: 25px;
+}
+/* service section */
+.service-header {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+
+.service-header h5 {
+  font-size: 12px;
+  line-height: 24px;
+  color: #939393;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.service-header h3 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #232323;
+  position: relative;
+}
+
+.service-header h3::after {
+  content: "";
+  width: 90px;
+  height: 1px;
+  position: absolute;
+  background-color: #ff214f;
+  top: 60px;
+  display: block;
+  right: 50%;
+  transform: translateX(50%);
+}
+.sec-service-box {
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+  align-items: center;
 }
