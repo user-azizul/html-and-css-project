@@ -626,3 +626,65 @@ button.info-btn:hover {
   justify-content: center;
   align-items: center;
 }
+.service-box-card {
+  position: relative;
+  width: 320px;
+  height: 240px;
+  perspective: 1000px;
+  margin: 10px;
+}
+.service-inner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  -webkit-transition: transform 0.5s;
+  -moz-transition: transform 0.5s;
+  -ms-transition: transform 0.5s;
+  -o-transition: transform 0.5s;
+}
+.service-box-card:hover .service-inner {
+  transform: rotateX(-180deg);
+  -webkit-transform: rotateX(-180deg);
+  -moz-transform: rotateX(-180deg);
+  -ms-transform: rotateX(-180deg);
+  -o-transform: rotateX(-180deg);
+}
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.card-back {
+  background-color: #ff214f;
+  color: #fff;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px 25px;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
+.card-back p {
+  font-size: 13px;
+}
+.service-b-text {
+  text-align: center;
+}
+
+.service-b-text h5 {
+  color: #232323;
+}
+
+.service-b-text p {
+  font-size: 12px;
+  margin: 0 0 0 25px;
+}
