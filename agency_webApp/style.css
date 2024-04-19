@@ -24,8 +24,12 @@ img {
 }
 h2,
 h3,
-h4 {
-  font-family: "Montserrat", sans-serif;
+h4,
+h5 {
+  font-family: "Montserrat", sans-serif !important;
+}
+:root {
+  --base-color: #ff214f;
 }
 section {
   width: 100%;
@@ -183,7 +187,7 @@ button.hero-btn {
   font-weight: 500;
   margin-bottom: 10px;
   line-height: 23px;
-  color: #ff214f;
+  color: var(--base-color);
 }
 .about-text h2 {
   font-size: 32px;
@@ -201,7 +205,7 @@ button.hero-btn {
 .about-icon i {
   font-size: 40px;
   margin-bottom: 20px;
-  color: #ff214f;
+  color: var(--base-color);
 }
 .about-text h3 {
   font-size: 14px;
@@ -263,7 +267,7 @@ section.service {
 }
 .icon {
   height: 80px;
-  background: #ff214f;
+  background: var(--base-color);
   width: 80px;
   display: flex;
   border-radius: 50%;
@@ -616,7 +620,7 @@ button.info-btn:hover {
   width: 90px;
   height: 1px;
   position: absolute;
-  background-color: #ff214f;
+  background-color: var(--base-color);
   top: 60px;
   display: block;
   right: 50%;
@@ -662,7 +666,7 @@ button.info-btn:hover {
   -webkit-backface-visibility: hidden;
 }
 .card-back {
-  background-color: #ff214f;
+  background-color: var(--base-color);
   color: #fff;
   display: flex;
   justify-self: center;
@@ -723,7 +727,7 @@ button.info-btn:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 .information-2 .information-text li::before {
-  color: #ff214f;
+  color: var(--base-color);
 }
 .information-2 button {
   background-color: #fff;
@@ -733,4 +737,43 @@ button.info-btn:hover {
 .information-2 button:hover {
   background-color: #000;
   color: #fff;
+}
+
+/* company section */
+.company-section {
+  padding: 130px 8%;
+  overflow: hidden;
+}
+.compapny-sec {
+  display: flex;
+  justify-content: center;
+}
+
+.sec-banner {
+  padding: 0 8%;
+  flex: 0 0 auto;
+  width: 58.33%;
+}
+
+.company-section h5 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 23px;
+  color: var(--base-color);
+}
+.company-section h4 {
+  font-size: 28px;
+  line-height: 38px;
+  color: rgb(35, 35, 35);
+  margin-bottom: 25px;
+}
+.compapny-img {
+  flex: 0 0 auto;
+  width: 41.66%;
+}
+
+.sec-banner p {
+  line-height: 26px;
+  margin-bottom: 15px;
 }
