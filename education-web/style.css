@@ -109,3 +109,21 @@ nav .menu {
   justify-content: center;
   gap: 4rem;
 }
+/* header sectin */
+header {
+  position: relative;
+  top: 5rem;
+  overflow: hidden;
+  height: 70vh;
+  margin-bottom: 5rem;
+}
+.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  align-items: center;
+}
+
+.header-container p {
+  margin: 1rem 0 2.4rem;
+}
