@@ -18,7 +18,7 @@
   --color-black: #000;
   --color-bg: #1f2641;
   --color-bg1: #2e3267;
-  --color-pribg2mary: #424890;
+  --color-bg2: #424890;
   --container-width-lg: 80%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
@@ -92,9 +92,13 @@ nav button {
 nav {
   height: 5rem;
   width: 100vw;
-
+  z-index: 11;
   position: fixed;
   top: 0;
+}
+.scroll-nav {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
 .nav-container {
@@ -126,4 +130,93 @@ header {
 
 .header-container p {
   margin: 1rem 0 2.4rem;
+}
+/* categories section start */
+#categories {
+  background: var(--color-bg1);
+  height: 29rem;
+}
+#categories h1 {
+  line-height: 1;
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.categories-left p {
+  margin: 1rem 0 3rem;
+}
+
+.categories-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.categories-left {
+  margin-right: 4rem;
+}
+
+.category {
+  background: var(--color-bg2);
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+}
+#categories h1 {
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.categories-left p {
+  margin: 1rem 0 2rem;
+}
+
+.categories-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+}
+
+.categories-left {
+  margin-right: 4rem;
+}
+
+article.category {
+  background: var(--color-bg2);
+  padding: 2rem;
+  border-radius: 2rem;
+  transition: var(--transition);
+}
+
+span.category-icon {
+  padding: 0.7rem;
+  border-radius: 0.9rem;
+  background: var(--color-bg1);
+}
+
+.category h5 {
+  margin: 2rem 0 1rem;
+}
+.category p {
+  font-size: 0.82rem;
+}
+.category:nth-child(2) span {
+  background: var(--color-danger);
+}
+.category:nth-child(3) span {
+  background: var(--color-success);
+}
+.category:nth-child(4) span {
+  background: var(--color-warning);
+}
+.category:nth-child(5) span {
+  background: var(--color-success);
 }
