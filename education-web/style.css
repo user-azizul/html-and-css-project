@@ -281,11 +281,13 @@ Questions
   gap: 1rem;
 }
 .question {
+  display: flex;
+  align-items: flex-start;
+  height: fit-content;
+  flex-direction: column;
   background: var(--color-primary);
-  border-radius: var(--radius);
-  box-shadow: var(--light-shadow);
   padding: 1.5rem 1.5rem 0 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   transition: var(--transition);
   -webkit-transition: var(--transition);
   -moz-transition: var(--transition);
@@ -298,6 +300,7 @@ Questions
   align-items: center;
   text-transform: capitalize;
   padding-bottom: 1rem;
+  width: 100%;
 }
 
 .question-title p {
