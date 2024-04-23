@@ -104,6 +104,7 @@ nav {
 .scroll-nav {
   background: var(--color-primary);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  width: 100vw;
 }
 
 .nav-container {
@@ -139,7 +140,7 @@ header {
 /* categories section start */
 #categories {
   background: var(--color-bg1);
-  height: 29rem;
+  height: 32rem;
 }
 #categories h1 {
   line-height: 1;
@@ -446,4 +447,64 @@ footer ul li a:hover {
   padding: 1.2rem 0;
   margin-top: 4rem;
   border-top: 1px solid var(--color-bg2);
+}
+.d-flex {
+  display: flex !important;
+}
+.d-none {
+  display: none !important ;
+}
+
+/* responsive  */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  nav button {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    background: transparent;
+    color: var(--color-white);
+  }
+  nav button#close-menu {
+    display: none;
+  }
+  nav .menu {
+    position: fixed;
+    right: 5%;
+    top: 5rem;
+    flex-direction: column;
+    height: fit-content;
+    width: 18rem;
+    gap: 0;
+    display: none;
+  }
+  .menu li {
+    width: 100%;
+    height: 5.8rem;
+  }
+  .menu li a {
+    background: var(--color-primary);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+  }
+  .menu li a:hover {
+    background: var(--color-bg2);
+  }
 }

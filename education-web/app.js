@@ -19,16 +19,16 @@ questions.forEach(function (question) {
   });
 });
 
-const menuBtn = document.querySelectorAll("nav button");
+const openBtn = document.getElementById("open-menu");
+const closeBtn = document.getElementById("close-menu");
 const menu = document.querySelector(".menu");
-menuBtn.forEach(function (item) {
-  item.addEventListener("click", function (e) {
-    let idName = e.target.parentElement.id;
-    if (idName === "open-menu") {
-      idName = "close-menu";
-    }
-    if (idName === "close-menu") {
-      idName = "open-menu";
-    }
-  });
+openBtn.addEventListener("click", function () {
+  menu.style.display = "flex";
+  closeBtn.style.display = "inline-block";
+  openBtn.style.display = "none";
+});
+closeBtn.addEventListener("click", function () {
+  menu.style.display = "none";
+  closeBtn.style.display = "none";
+  openBtn.style.display = "inline-block";
 });
