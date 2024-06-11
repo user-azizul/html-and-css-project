@@ -527,6 +527,7 @@ footer ul li a:hover {
       -moz-transform: rotateZ(-90deg);
       -ms-transform: rotateZ(-90deg);
       -o-transform: rotateZ(-90deg);
+      opacity: 0;
     }
     100% {
       transform: rotateZ(0deg);
