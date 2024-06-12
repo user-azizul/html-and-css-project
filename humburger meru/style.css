@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  background: #ffffff;
+  font-weight: 400;
+  line-height: 25px;
+  width: 100%;
+}
+:root {
+  --text-color: #002450;
+}
+header {
+  position: relative;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 20px 0;
+}
+.main-menu ul {
+  list-style: none;
+  display: flex;
+}
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.main-menu ul li {
+  padding: 10px 8px;
+  margin: 0 10px;
+}
+ul li a {
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.menu-icon {
+  display: none;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+.menu-icon i.fa {
+  color: #000;
+  font-size: 35px;
+  display: none;
+  padding: 10px;
+}
+
+li.register a {
+  color: #fff;
+}
+li.register {
+  background: dodgerblue;
+}
+
+@media (max-width: 991px) {
+  .main-menu ul {
+    position: absolute;
+    top: 70px;
+    right: 15px;
+    bottom: 15px;
+    left: 50%;
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: dodgerblue;
+    float: right;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    transition: height 0.3s;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+  }
+  .main-menu ul.mobile {
+    height: 85vh !important;
+    visibility: visible !important;
+    display: block;
+  }
+  .main-menu ul.mobile li {
+    padding: 15px 25px;
+  }
+  ul.mobile li.register {
+    background: white;
+    justify-content: center;
+    display: flex;
+    padding: 10px !important;
+    width: 85%;
+    margin: 0 auto;
+  }
+  ul.mobile li.register a {
+    color: dodgerblue !important;
+  }
+  .main-menu ul li a {
+    color: #ffffff;
+  }
+  .menu-icon {
+    display: flex;
+  }
+  .menu-icon.bar i.fa-bars {
+    display: block;
+  }
+  .menu-icon.times i.fa-times {
+    display: block;
+  }
+
+  nav ul.mobile li {
+    display: block;
+    margin: 10px 50px 10px 0px;
+  }
+}
+@media (max-width: 800px) {
+  .main-menu ul.mobile {
+    left: 15px;
+    height: 85vh !important;
+    float: left;
+  }
+  .main-menu ul.mobile li {
+    text-align: center;
+    padding: 15px 25px;
+    margin: 0 auto;
+  }
+  ul.mobile li.register {
+    padding: 10px !important;
+  }
+}
